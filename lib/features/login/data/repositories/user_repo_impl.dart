@@ -1,11 +1,12 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 
 import '../../../../common/utilities/failures.dart';
 import '../../domain/entities/user.dart';
 import '../../domain/repositories/user_repo.dart';
 import '../datasources/fake_api.dart';
 
+@LazySingleton(as: UserRepo)
 class UserRepoImpl implements UserRepo {
   final FakeApi fakeApi;
 

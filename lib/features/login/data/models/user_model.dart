@@ -6,7 +6,6 @@ part 'user_model.g.dart';
 
 @JsonSerializable()
 class UserModel extends User {
-  // ignore: annotate_overrides
   final String email;
 
   const UserModel(this.email) : super('');

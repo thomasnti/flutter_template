@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
+import 'dependency_injection/dependency_injection.dart';
+import 'features/login/presentation/pages/login_page.dart';
+
 void main() {
-  runApp(const MainApp());
+  configureDependencies();
+  runApp(const TemplateApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class TemplateApp extends StatelessWidget {
+  const TemplateApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      home: LoginScreen(),
     );
   }
 }

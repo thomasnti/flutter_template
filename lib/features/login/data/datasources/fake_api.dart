@@ -1,4 +1,6 @@
-import 'package:http/http.dart' as http;
+// import 'package:http/http.dart' as http;
+
+import 'package:injectable/injectable.dart';
 
 import '../models/user_model.dart';
 
@@ -6,6 +8,7 @@ abstract class FakeApi {
   Future<UserModel> login();
 }
 
+@LazySingleton(as: FakeApi)
 class FakeApiImpl implements FakeApi {
   // final http.Client client;
 
