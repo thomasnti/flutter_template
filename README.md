@@ -7,7 +7,7 @@ This is a starter project, which implements clean architecture in flutter with a
 - get_it (service locator)
 - injectable (in order to implement DI)
 
-## Usefull commands
+## Usefull Flutter commands
 Check for outdated flutter packages in your pubspec.yaml
   `flutter pub outdated`
 
@@ -19,3 +19,9 @@ Generate localizations
 
 Generate .g files
   `flutter pub run build_runner build --delete-conflicting-outputs`
+
+## Usefull Androi, Gradle commands
+In the android folder you can run: 
+`./gradlew -v`
+`./gradlew clean`
+`./gradlew build`
