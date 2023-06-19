@@ -20,6 +20,9 @@ Generate localizations
 Generate .g files
   `flutter pub run build_runner build --delete-conflicting-outputs`
 
+More info about flutter installation
+  `flutter doctor -v`
+
 ## Usefull Androi, Gradle commands
 In the android folder you can run: 
 `./gradlew -v`
